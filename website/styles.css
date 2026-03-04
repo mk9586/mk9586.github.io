@@ -1,5 +1,5 @@
 /* ============================================================
-   GAKK Consulting — Phase 1 Stylesheet
+   GAKK Consulting — Stylesheet
    Design substrate: SHIELD UI aesthetic
    Primary: #5b21b6 (deep purple)
    ============================================================ */
@@ -32,6 +32,7 @@ a:hover {
 .site-header {
     background: #ffffff;
     border-bottom: 1px solid #e5e7eb;
+    position: relative;
 }
 
 .site-header-inner {
@@ -45,7 +46,7 @@ a:hover {
 }
 
 .site-logo {
-    height: 44px;
+    height: 120px;
     display: block;
 }
 
@@ -150,7 +151,7 @@ a:hover {
 
 .value-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 56px 0 72px;
 }
@@ -334,6 +335,44 @@ a:hover {
     line-height: 1.65;
 }
 
+/* --- Mobile nav toggle button --- */
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #1f2937;
+    border-radius: 2px;
+}
+
+/* --- Form validation errors --- */
+
+.field-error {
+    display: block;
+    font-size: 12px;
+    color: #dc2626;
+    margin-top: 4px;
+}
+
+.form-row input[aria-invalid="true"],
+.form-row textarea[aria-invalid="true"] {
+    border-color: #dc2626;
+    outline-color: #dc2626;
+}
+
 /* --- Responsive --- */
 
 @media (max-width: 720px) {
@@ -345,15 +384,57 @@ a:hover {
         font-size: 1.65rem;
     }
 
+    .hero {
+        padding: 56px 24px 48px;
+    }
+
+    /* Header: shrink logo, show hamburger */
+
+    .site-header-inner {
+        height: auto;
+        padding: 12px 24px;
+    }
+
+    .site-logo {
+        height: 56px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Nav: hidden by default, drops down when open */
+
     .site-nav {
-        gap: 18px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+        flex-direction: column;
+        gap: 0;
+        padding: 4px 0;
+        z-index: 100;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .site-nav.nav-open {
+        display: flex;
+    }
+
+    .site-nav li {
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    .site-nav li:last-child {
+        border-bottom: none;
     }
 
     .site-nav a {
-        font-size: 13px;
-    }
-
-    .hero {
-        padding: 56px 24px 48px;
+        display: block;
+        padding: 14px 24px;
+        font-size: 15px;
     }
 }

@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — GAKK Consulting</title>
+    <meta name="description" content="Contact GAKK Consulting to discuss documentation problems, denial patterns, or intake instability at your FQHC.">
+    <link rel="canonical" href="https://gakkconsulting.com/contact.html">
+    <meta property="og:title" content="Contact — GAKK Consulting">
+    <meta property="og:description" content="Contact GAKK Consulting to discuss documentation problems, denial patterns, or intake instability at your FQHC.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gakkconsulting.com/contact.html">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
 </head>
 <body>
 
@@ -21,6 +28,9 @@
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
@@ -29,30 +39,36 @@
             <h1>Contact GAKK Consulting</h1>
             <p class="contact-intro">If you lead revenue cycle, compliance, or operations at an FQHC or community health organization and are dealing with documentation problems, denial patterns, or intake instability, we are available to talk.</p>
 
-            <form>
+            <!-- Form handler: Netlify (default) — deploy to Netlify and this works as-is.
+                 Formspree: replace action with "https://formspree.io/f/{YOUR_ID}", method="POST",
+                 and remove data-netlify + the hidden form-name input. -->
+            <form id="contactForm" name="contact" method="POST"
+                  action="thank-you.html" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+
                 <div class="form-row">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" autocomplete="name">
+                    <input type="text" id="name" name="name" autocomplete="name" required>
                 </div>
 
                 <div class="form-row">
                     <label for="role">Role</label>
-                    <input type="text" id="role" name="role">
+                    <input type="text" id="role" name="role" required>
                 </div>
 
                 <div class="form-row">
                     <label for="org">Organization</label>
-                    <input type="text" id="org" name="organization" autocomplete="organization">
+                    <input type="text" id="org" name="organization" autocomplete="organization" required>
                 </div>
 
                 <div class="form-row">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" autocomplete="email">
+                    <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
 
                 <div class="form-row">
                     <label for="message">How can we help?</label>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-block">Send Message</button>
