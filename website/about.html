@@ -23,8 +23,20 @@
             <nav>
                 <ul class="site-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html">Services</a>
+                        <ul class="dropdown">
+                            <li><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="about.html" class="active">About</a>
+                        <ul class="dropdown">
+                            <li><a href="leadership.html">Founders &amp; Leadership</a></li>
+                            <li><a href="alice.html">Alice &mdash; Founder Profile</a></li>
+                            <li><a href="references.html">References</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -40,6 +52,7 @@
 
             <div class="about-block">
                 <p>GAKK Consulting is a systems architecture and operational governance firm. We work with FQHCs and community health organizations to build structured operational substrates — audit frameworks, documentation governance systems, intake architectures, and workflow stabilization procedures — that address the conditions producing revenue loss and compliance exposure.</p>
+                <p><a href="leadership.html">Founders &amp; Leadership &rarr;</a></p>
             </div>
 
             <div class="about-block">
@@ -55,16 +68,27 @@
             <div class="about-block">
                 <h2>Billing &amp; Revenue Cycle</h2>
                 <p>Billing is not separate from operations — it is the endpoint of every documentation, intake, and eligibility decision made earlier in the encounter lifecycle. When billing fails at scale, the cause is almost never the billing department alone. GAKK Consulting treats revenue cycle performance as a downstream indicator of upstream structural conditions, and our work addresses both: the substrate problems that generate billing failures and the billing governance frameworks needed to manage them once the substrate is stable.</p>
+                <p><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle detail &rarr;</a></p>
             </div>
 
             <div class="about-block">
                 <h2>How We Work</h2>
                 <p>The core of our practice is sequencing and architecture. We identify the structural conditions driving operational problems, design the substrate needed to address them, and sequence implementation in a way that is executable within the organization's current capacity. We do not deliver reports that require external interpretation. We deliver frameworks that the organization can operate, audit, and maintain.</p>
+                <p><a href="contact.html">Talk with GAKK Consulting &rarr;</a></p>
             </div>
         </div>
     </main>
 
     <footer class="site-footer">
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a>
+            <a href="about.html">About</a>
+            <a href="leadership.html">Founders &amp; Leadership</a>
+            <a href="references.html">References</a>
+            <a href="contact.html">Contact</a>
+        </nav>
         <p>&copy; 2026 GAKK Consulting. All rights reserved.</p>
     </footer>
 

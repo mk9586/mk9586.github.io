@@ -23,8 +23,20 @@
             <nav>
                 <ul class="site-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html">Services</a>
+                        <ul class="dropdown">
+                            <li><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="about.html">About</a>
+                        <ul class="dropdown">
+                            <li><a href="leadership.html">Founders &amp; Leadership</a></li>
+                            <li><a href="alice.html">Alice &mdash; Founder Profile</a></li>
+                            <li><a href="references.html">References</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
@@ -39,12 +51,12 @@
             <h1>Contact GAKK Consulting</h1>
             <p class="contact-intro">If you lead revenue cycle, compliance, or operations at an FQHC or community health organization and are dealing with documentation problems, denial patterns, or intake instability, we are available to talk.</p>
 
-            <!-- Form handler: Netlify (default) — deploy to Netlify and this works as-is.
-                 Formspree: replace action with "https://formspree.io/f/{YOUR_ID}", method="POST",
-                 and remove data-netlify + the hidden form-name input. -->
-            <form id="contactForm" name="contact" method="POST"
-                  action="thank-you.html" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
+            <form id="contactForm" method="POST"
+                  action="https://api.web3forms.com/submit">
+                <input type="hidden" name="access_key" value="649c64a6-8cc9-4b52-9ba0-5ed898a15a8b">
+                <input type="hidden" name="cc" value="g.keister@gakkconsulting.com,a.keister@gakkconsulting.com">
+                <input type="hidden" name="redirect" value="https://gakkconsulting.com/thank-you.html">
+                <input type="hidden" name="subject" value="New contact from gakkconsulting.com">
 
                 <div class="form-row">
                     <label for="name">Name</label>
@@ -79,6 +91,15 @@
     </main>
 
     <footer class="site-footer">
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a>
+            <a href="about.html">About</a>
+            <a href="leadership.html">Founders &amp; Leadership</a>
+            <a href="references.html">References</a>
+            <a href="contact.html">Contact</a>
+        </nav>
         <p>&copy; 2026 GAKK Consulting. All rights reserved.</p>
     </footer>
 

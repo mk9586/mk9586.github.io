@@ -27,6 +27,24 @@ if (toggleBtn && nav) {
     });
 }
 
+// --- Dropdown click-toggle (desktop) ---
+
+document.querySelectorAll('.has-dropdown').forEach(item => {
+    item.querySelector(':scope > a').addEventListener('click', e => {
+        if (window.innerWidth > 720) {
+            e.preventDefault();
+            item.classList.toggle('open');
+        }
+    });
+});
+
+document.addEventListener('click', e => {
+    if (window.innerWidth > 720 && !e.target.closest('.has-dropdown')) {
+        document.querySelectorAll('.has-dropdown.open')
+            .forEach(el => el.classList.remove('open'));
+    }
+});
+
 // --- Contact form validation ---
 
 const form = document.getElementById('contactForm');

@@ -74,6 +74,66 @@ a:hover {
     color: #5b21b6;
 }
 
+/* --- Dropdown navigation --- */
+
+.has-dropdown {
+    position: relative;
+}
+
+.has-dropdown > a::after {
+    content: ' \25BE';
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 230px;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    z-index: 200;
+}
+
+.has-dropdown:hover .dropdown,
+.has-dropdown.open .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 9px 16px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown li a:hover {
+    color: #5b21b6;
+    background: #f9fafb;
+    text-decoration: none;
+}
+
+.dropdown-label {
+    padding: 10px 16px 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9ca3af;
+    border-top: 1px solid #f3f4f6;
+    margin-top: 4px;
+}
+
 /* --- Footer --- */
 
 .site-footer {
@@ -335,6 +395,67 @@ a:hover {
     line-height: 1.65;
 }
 
+/* --- Case study section labels within cards --- */
+
+.service-card h3 {
+    color: #5b21b6;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 24px 0 10px;
+}
+
+.service-card p + h3 {
+    border-top: 1px solid #f3f4f6;
+    padding-top: 24px;
+}
+
+/* --- Page CTA block --- */
+
+.page-cta {
+    text-align: center;
+    padding: 48px 0 16px;
+}
+
+.page-cta p {
+    color: #4b5563;
+    font-size: 0.97rem;
+    max-width: 640px;
+    margin: 0 auto 20px;
+    line-height: 1.65;
+}
+
+/* --- Profile page subhead --- */
+
+.profile-subhead {
+    color: #6b7280;
+    font-size: 0.97rem;
+    margin: -20px 0 40px;
+    line-height: 1.5;
+}
+
+/* --- Footer nav --- */
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 28px;
+    margin-bottom: 20px;
+}
+
+.footer-nav a {
+    color: #9ca3af;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* --- Mobile nav toggle button --- */
 
 .nav-toggle {
@@ -436,5 +557,35 @@ a:hover {
         display: block;
         padding: 14px 24px;
         font-size: 15px;
+    }
+
+    /* Dropdown: always-visible indented sub-items within open mobile nav */
+
+    .has-dropdown > a::after {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+        position: static;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        min-width: 0;
+        padding: 0;
+        background: #f9fafb;
+    }
+
+    .dropdown li a {
+        padding: 11px 24px 11px 40px;
+        font-size: 14px;
+        border-bottom: 1px solid #f3f4f6;
+        color: #4b5563;
+    }
+
+    .dropdown-label {
+        padding: 8px 24px 4px 40px;
+        border-top: none;
+        margin-top: 0;
     }
 }
