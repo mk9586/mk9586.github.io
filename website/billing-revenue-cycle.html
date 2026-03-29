@@ -10,6 +10,9 @@
     <meta property="og:description" content="GAKK addresses FQHC revenue cycle failure at the structural level: claim submission, denial management, payment posting, billing governance, and documentation alignment.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gakkconsulting.com/billing-revenue-cycle.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
@@ -24,13 +27,20 @@
                 <ul class="site-nav">
                     <li><a href="index.html">Home</a></li>
                     <li class="has-dropdown">
-                        <a href="services.html" class="active">Services</a>
+                        <a href="services.html" class="active">Services <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li class="dropdown-label">Doctrine</li>
+                            <li><a href="doctrine-documentation-governance.html">Documentation Governance</a></li>
+                            <li><a href="doctrine-denial-pattern-analysis.html">Denial Pattern Analysis</a></li>
+                            <li><a href="doctrine-billing-governance.html">Billing Governance</a></li>
+                            <li><a href="doctrine-intake-eligibility.html">Intake &amp; Eligibility</a></li>
+                            <li><a href="doctrine-audit-substrate.html">Audit Substrate</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
-                        <a href="about.html">About</a>
+                        <a href="about.html">About <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="leadership.html">Founders &amp; Leadership</a></li>
                             <li><a href="alice.html">Alice &mdash; Founder Profile</a></li>
@@ -46,36 +56,42 @@
         </div>
     </header>
 
-    <main class="container">
-        <div class="page-section">
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label">Billing &amp; Revenue Cycle</span>
             <h1>Billing &amp; Revenue Cycle</h1>
             <p class="page-intro">Revenue cycle failure in an FQHC is rarely a billing department problem in isolation. It is an operational alignment problem — documentation, intake, eligibility, and billing workflows that were never designed to work together under FQHC-specific conditions. GAKK addresses the full cycle.</p>
+        </div>
+    </section>
 
-            <div class="service-card">
+    <main class="container">
+        <div class="page-section">
+
+            <div class="service-card animate-in">
                 <h2>Claim Submission</h2>
                 <p>FQHC claim submission operates under rules that do not apply in standard fee-for-service environments: encounter rate billing, prospective payment settlement, managed care encounter submission requirements, and payer-specific variations that differ by contract. Claims that are technically correct by general billing standards can still be denied or underpaid in an FQHC if they are not aligned to the specific requirements of the applicable payer and contract.</p>
                 <p>GAKK reviews claim submission workflows against the organization's actual payer mix and contract terms, identifies submission logic gaps, and develops submission standards that account for FQHC-specific requirements by payer type. This is not a billing department replacement — it is the governance layer that ensures the billing department is working from accurate, current, and documented submission standards.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-in">
                 <h2>Denial Management</h2>
                 <p>Denial management in an FQHC is a diagnostic function before it is a resolution function. The first step is not appeals — it is classification. Denials recorded only as denied produce no useful information. Denials classified by root cause, payer, provider, service type, and denial reason code produce the data needed to determine whether the failure originated in documentation, intake, eligibility, coding, or submission.</p>
                 <p>GAKK builds denial management systems that classify denials at the root cause level, route correction to the appropriate part of the organization, and track denial patterns over time to identify systemic failures. Appeals management is one component of this system — it is not the whole system.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-in">
                 <h2>Payment Posting &amp; Accounts Receivable</h2>
                 <p>Payment posting errors and accounts receivable mismanagement compound quietly. Incorrect payment posting produces misleading performance data, distorts accounts receivable aging, and allows underpayment to go undetected. Accounts receivable that are not worked systematically — with defined follow-up timelines, payer-specific escalation paths, and write-off authorization procedures — accumulate into losses that are difficult to recover.</p>
                 <p>GAKK reviews payment posting standards and accounts receivable management procedures, identifies gaps in current practice, and develops governance frameworks that produce accurate financial data and systematic follow-up on outstanding balances.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-in">
                 <h2>Billing Governance</h2>
                 <p>The billing department in an FQHC needs operational infrastructure that most billing departments do not have: procedure documentation aligned to encounter rate rules; payer-specific submission standards written as executable procedures rather than held in staff knowledge; an internal review schedule that identifies process drift; and integration with documentation and intake workflows so that billing is not absorbing failures that originate upstream.</p>
                 <p>GAKK designs billing governance frameworks that cover all of these areas. The deliverable is not a set of recommendations — it is a documented, executable, staff-operable system.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-in">
                 <h2>Documentation &amp; Intake Alignment</h2>
                 <p>Billing performance is a downstream indicator. When denial rates are high, when first-pass resolution is low, when accounts receivable is aging, the cause almost always includes upstream failures in documentation or intake that billing cannot correct on its own. Billing that receives poorly documented encounters will produce denials regardless of billing quality. Billing that receives encounters with unverified eligibility will produce eligibility-related denials regardless of submission accuracy.</p>
                 <p>GAKK treats billing governance as one layer in an integrated operational substrate. Billing work is designed to connect with documentation governance and intake architecture — not as parallel projects, but as a coordinated operational system in which each layer reinforces the others.</p>
@@ -89,10 +105,12 @@
     </main>
 
     <footer class="site-footer">
+        <p class="footer-tagline">Systems Architecture. Operational Governance.</p>
         <nav class="footer-nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a>
+            <a href="case-studies.html">Case Studies</a>
             <a href="about.html">About</a>
             <a href="leadership.html">Founders &amp; Leadership</a>
             <a href="references.html">References</a>

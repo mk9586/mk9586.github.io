@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies — GAKK Consulting</title>
+    <meta name="description" content="Anonymized case studies showing how GAKK identified structural causes of FQHC revenue cycle, documentation, and billing failures and built governance systems to address them.">
+    <link rel="canonical" href="https://gakkconsulting.com/case-studies.html">
+    <meta property="og:title" content="Case Studies — GAKK Consulting">
+    <meta property="og:description" content="Anonymized case studies showing how GAKK identified structural causes of FQHC revenue cycle, documentation, and billing failures and built governance systems to address them.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gakkconsulting.com/case-studies.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="index.html">
+                <img src="GAKK_Logo.png" alt="GAKK Consulting" class="site-logo">
+            </a>
+            <nav>
+                <ul class="site-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="active">Services <span class="dropdown-arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li class="dropdown-label">Doctrine</li>
+                            <li><a href="doctrine-documentation-governance.html">Documentation Governance</a></li>
+                            <li><a href="doctrine-denial-pattern-analysis.html">Denial Pattern Analysis</a></li>
+                            <li><a href="doctrine-billing-governance.html">Billing Governance</a></li>
+                            <li><a href="doctrine-intake-eligibility.html">Intake &amp; Eligibility</a></li>
+                            <li><a href="doctrine-audit-substrate.html">Audit Substrate</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="about.html">About <span class="dropdown-arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="leadership.html">Founders &amp; Leadership</a></li>
+                            <li><a href="alice.html">Alice &mdash; Founder Profile</a></li>
+                            <li><a href="references.html">References</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label">Case Studies</span>
+            <h1>Case Studies</h1>
+            <p class="page-intro">The following cases are anonymized. No client names, identifying details, or specific metrics are included. Each illustrates how GAKK identified the structural cause of a recurring operational failure and built the governance infrastructure to address it.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="page-section">
+            <div class="service-card animate-in">
+                <h2>Documentation Drift at a Multi-Site FQHC</h2>
+
+                <h3>The Problem</h3>
+                <p>A multi-site FQHC was experiencing a sustained increase in claim denials concentrated in medical necessity and documentation insufficiency categories. The pattern was distributed across multiple providers at two of the organization's three sites. The billing department had identified the denial pattern but had not been able to isolate its root cause or implement a correction that held longer than a billing cycle.</p>
+
+                <h3>The Structural Cause</h3>
+                <p>Review of encounter-level documentation revealed that providers across the affected sites were documenting encounters at a level sufficient for fee-for-service billing but insufficient for the encounter rate billing documentation standards required by the organization's managed care payers. The documentation governance framework in place had been designed for a fee-for-service context and had not been updated when the payer mix changed. No pre-submission audit mechanism existed to identify documentation deficiencies before claims were submitted. Deficiencies were only becoming visible at the denial stage, after the encounter was closed and the opportunity for direct correction had passed.</p>
+
+                <h3>What GAKK Changed</h3>
+                <p>GAKK developed an encounter-level documentation standard aligned to the specific managed care payer requirements of the organization's current payer mix. A pre-submission audit substrate was designed and implemented, incorporating a provider-level feedback protocol that delivered corrective guidance on specific encounters before submission. Provider-level documentation variance was tracked and addressed through direct coaching targeting the specific documentation behaviors producing deficiencies — not through general training delivered to the full clinical staff.</p>
+
+                <h3>The Qualitative Outcome</h3>
+                <p>Documentation deficiencies began being identified and corrected before submission rather than after denial. Provider-level variance in documentation quality became visible and addressable at the encounter level. The billing department received cleaner documentation and was able to direct denial management capacity toward the residual denial patterns — those originating outside of documentation — rather than working a volume of deficiencies that could have been corrected upstream.</p>
+            </div>
+
+            <div class="service-card animate-in">
+                <h2>Intake Architecture and Eligibility-Related Denials</h2>
+
+                <h3>The Problem</h3>
+                <p>An FQHC with a high-volume primary care practice was experiencing a persistent pattern of eligibility-related denials concentrated in its Medicaid and managed Medicaid payer categories. The organization had an eligibility verification process in place. Verification failures were recurring despite staff training and supervisory review. Leadership had concluded that the problem was front desk execution failure and was considering personnel action.</p>
+
+                <h3>The Structural Cause</h3>
+                <p>Process mapping revealed that the eligibility verification workflow had gaps that made execution failure systematic rather than exceptional. The verification process had no defined escalation logic for patients whose coverage status was inactive or uncertain at the time of the visit. Coverage sequencing for patients with both Medicaid and a secondary payer was not documented as an executable procedure — it was handled by individual staff judgment, inconsistently across staff members. Sliding fee determination was performed at check-in without reliable access to the eligibility information needed to apply it correctly. The process was structurally incomplete. It was generating failures that were independent of staff execution quality.</p>
+
+                <h3>What GAKK Changed</h3>
+                <p>GAKK redesigned the intake and eligibility workflow from the point of scheduling through the point of clinical encounter. This included: an eligibility verification procedure with defined coverage sequencing logic for complex-coverage patients; escalation protocols for inactive or uncertain coverage status with defined disposition options; sliding fee determination procedures integrated with eligibility verification rather than performed as a separate step; and staff-executable procedures that eliminated the judgment gaps that had been producing failures inconsistently across staff.</p>
+
+                <h3>The Qualitative Outcome</h3>
+                <p>The intake process began identifying coverage status problems before the clinical encounter rather than after claim submission. Eligibility-related denials in the affected payer categories declined. Sliding fee determinations became consistent and auditable. Front desk staff had documented procedures to work from rather than informal practices that varied by individual and eroded when staff changed.</p>
+            </div>
+
+            <div class="service-card animate-in">
+                <h2>Billing Governance Collapse During Organizational Growth</h2>
+
+                <h3>The Problem</h3>
+                <p>A community health organization that had grown significantly over a three-year period was experiencing accounts receivable aging, increasing denial volume across multiple payer categories, and billing department turnover. The organization had added providers, sites, and payer contracts faster than its billing infrastructure had scaled to support them. Leadership was attributing the billing performance problems to the billing department and was considering replacing the billing director.</p>
+
+                <h3>The Structural Cause</h3>
+                <p>Assessment revealed that the billing department's operational failures were not primarily attributable to personnel. The organization had added payer contracts whose specific requirements — encounter rate variations, managed care submission rules, prior authorization requirements by service type — had never been documented as executable billing procedures. Billing staff were working from institutional knowledge that was incomplete, inconsistent across individuals, and not being transferred effectively to new hires. When experienced billing staff left, they took operational knowledge with them, leaving gaps that new staff filled with incorrect assumptions. The billing director was managing a department that lacked the documentation infrastructure to operate consistently regardless of personnel quality.</p>
+
+                <h3>What GAKK Changed</h3>
+                <p>GAKK conducted a systematic review of the organization's payer contracts and built a billing procedure library documenting the specific submission requirements, prior authorization rules, and denial response protocols for each payer in the organization's current mix. Denial classification was rebuilt to distinguish between denials originating in documentation, in eligibility, and in billing submission — allowing the billing director to route corrective action appropriately rather than absorbing all denial volume as a single billing department problem. An internal billing review schedule was established to identify process drift before it compounded. Accounts receivable management procedures were formalized with defined follow-up timelines by payer and aging category.</p>
+
+                <h3>The Qualitative Outcome</h3>
+                <p>The billing department began operating from documented procedures rather than individual knowledge. New staff onboarding became faster and more consistent because the operational knowledge needed to execute correctly was in writing rather than in the heads of departing staff. The billing director was able to identify and address payer-specific failure patterns rather than managing an undifferentiated denial volume. Accounts receivable management became systematic. Leadership was able to evaluate billing performance against defined, achievable standards rather than against outcomes that the department lacked the infrastructure to produce consistently.</p>
+            </div>
+
+            <div class="page-cta">
+                <p>If these situations resemble what you are dealing with, we are available to talk.</p>
+                <a href="contact.html" class="btn">Talk with GAKK Consulting</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-tagline">Systems Architecture. Operational Governance.</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="about.html">About</a>
+            <a href="leadership.html">Founders &amp; Leadership</a>
+            <a href="references.html">References</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>&copy; 2026 GAKK Consulting. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

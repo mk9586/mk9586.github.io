@@ -10,6 +10,9 @@
     <meta property="og:description" content="Contact GAKK Consulting to discuss documentation problems, denial patterns, or intake instability at your FQHC.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gakkconsulting.com/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
@@ -24,13 +27,20 @@
                 <ul class="site-nav">
                     <li><a href="index.html">Home</a></li>
                     <li class="has-dropdown">
-                        <a href="services.html">Services</a>
+                        <a href="services.html">Services <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li class="dropdown-label">Doctrine</li>
+                            <li><a href="doctrine-documentation-governance.html">Documentation Governance</a></li>
+                            <li><a href="doctrine-denial-pattern-analysis.html">Denial Pattern Analysis</a></li>
+                            <li><a href="doctrine-billing-governance.html">Billing Governance</a></li>
+                            <li><a href="doctrine-intake-eligibility.html">Intake &amp; Eligibility</a></li>
+                            <li><a href="doctrine-audit-substrate.html">Audit Substrate</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
-                        <a href="about.html">About</a>
+                        <a href="about.html">About <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="leadership.html">Founders &amp; Leadership</a></li>
                             <li><a href="alice.html">Alice &mdash; Founder Profile</a></li>
@@ -46,12 +56,17 @@
         </div>
     </header>
 
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label">Get in Touch</span>
+            <h1>Contact GAKK Consulting</h1>
+            <p class="page-intro">If you lead revenue cycle, compliance, or operations at an FQHC or community health organization and are dealing with documentation problems, denial patterns, or intake instability, we are available to talk.</p>
+        </div>
+    </section>
+
     <main class="container">
         <div class="contact-wrap">
-            <h1>Contact GAKK Consulting</h1>
-            <p class="contact-intro">If you lead revenue cycle, compliance, or operations at an FQHC or community health organization and are dealing with documentation problems, denial patterns, or intake instability, we are available to talk.</p>
-
-            <form id="contactForm" method="POST"
+            <form id="contactForm" class="animate-in" method="POST"
                   action="https://api.web3forms.com/submit">
                 <input type="hidden" name="access_key" value="649c64a6-8cc9-4b52-9ba0-5ed898a15a8b">
                 <input type="hidden" name="cc" value="g.keister@gakkconsulting.com,a.keister@gakkconsulting.com">
@@ -91,10 +106,12 @@
     </main>
 
     <footer class="site-footer">
+        <p class="footer-tagline">Systems Architecture. Operational Governance.</p>
         <nav class="footer-nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a>
+            <a href="case-studies.html">Case Studies</a>
             <a href="about.html">About</a>
             <a href="leadership.html">Founders &amp; Leadership</a>
             <a href="references.html">References</a>

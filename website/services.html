@@ -10,6 +10,9 @@
     <meta property="og:description" content="Audit substrates, documentation governance, intake architecture, billing support, and EHR stabilization for FQHCs.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gakkconsulting.com/services.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
@@ -24,13 +27,20 @@
                 <ul class="site-nav">
                     <li><a href="index.html">Home</a></li>
                     <li class="has-dropdown">
-                        <a href="services.html" class="active">Services</a>
+                        <a href="services.html" class="active">Services <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li class="dropdown-label">Doctrine</li>
+                            <li><a href="doctrine-documentation-governance.html">Documentation Governance</a></li>
+                            <li><a href="doctrine-denial-pattern-analysis.html">Denial Pattern Analysis</a></li>
+                            <li><a href="doctrine-billing-governance.html">Billing Governance</a></li>
+                            <li><a href="doctrine-intake-eligibility.html">Intake &amp; Eligibility</a></li>
+                            <li><a href="doctrine-audit-substrate.html">Audit Substrate</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
-                        <a href="about.html">About</a>
+                        <a href="about.html">About <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="leadership.html">Founders &amp; Leadership</a></li>
                             <li><a href="alice.html">Alice &mdash; Founder Profile</a></li>
@@ -46,12 +56,17 @@
         </div>
     </header>
 
-    <main class="container">
-        <div class="page-section">
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label">Our Services</span>
             <h1>Services</h1>
             <p class="page-intro">GAKK Consulting works across five operational domains common to FQHCs and community health organizations.</p>
+        </div>
+    </section>
 
-            <div class="service-card">
+    <main class="container">
+        <div class="page-section">
+            <div class="service-card animate-in">
                 <h2>FQHC Audit Substrate</h2>
                 <p class="pain">FQHCs routinely discover documentation deficiencies at the denial stage, after the clinical encounter has closed and the opportunity for correction has passed. Audit processes that run after the fact produce reports but not resolution.</p>
                 <ul>
@@ -62,18 +77,18 @@
                 <p><a href="contact.html">Discuss audit substrates &rarr;</a></p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-in">
                 <h2>Documentation &amp; Coding Governance</h2>
                 <p class="pain">Documentation quality in community health settings degrades over time when coding standards are applied inconsistently across providers, sites, or payer types. Inconsistency produces both compliance exposure and revenue leakage.</p>
                 <ul>
-                    <li>Establishes documentation governance frameworks aligned to FQHC payer contracts, UDS reporting obligations, and clinical workflow constraints</li>
+                    <li>Establishes documentation governance frameworks aligned to FQHC payer contracts, clinical quality requirements, and clinical workflow constraints</li>
                     <li>Identifies provider-level and site-level documentation variance and structures corrective guidance</li>
                     <li>Builds internal review processes that maintain consistency without relying on continuous external oversight</li>
                 </ul>
                 <p><a href="contact.html">Discuss documentation governance &rarr;</a></p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-in">
                 <h2>Intake &amp; Eligibility Architecture</h2>
                 <p class="pain">Intake and eligibility failures are often treated as front-desk errors when they are structural problems — gaps in process design that produce recurring downstream denials, coverage lapses, and patient account instability.</p>
                 <ul>
@@ -84,18 +99,19 @@
                 <p><a href="contact.html">Discuss intake architecture &rarr;</a></p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-in">
                 <h2>Billing &amp; Revenue Cycle Support</h2>
                 <p class="pain">Revenue cycle failures in FQHCs are frequently diagnosed as billing department problems when they originate upstream — in documentation gaps, eligibility lapses, and workflow misalignment that reach the claim in an uncorrectable state.</p>
                 <ul>
                     <li>Reviews the claim lifecycle from encounter documentation through adjudication to identify failure points by payer, provider, and service type</li>
                     <li>Structures billing workflows to align with FQHC encounter rate requirements, managed care contracts, and payer-specific submission rules</li>
                     <li>Develops internal billing governance procedures that reduce rework, improve first-pass resolution, and create a traceable path from encounter to payment</li>
+                    <li>Covers all FQHC service types including dental, behavioral health, pediatrics, OB/GYN, and enabling services</li>
                 </ul>
                 <p><a href="billing-revenue-cycle.html">Full billing &amp; revenue cycle detail &rarr;</a></p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-in">
                 <h2>EHR Workflow Stabilization</h2>
                 <p class="pain">EHR implementations frequently drift from their intended configuration as clinical staff adapt workflows informally over time. This drift produces documentation inconsistency, billing misalignment, and reporting gaps that are difficult to trace without structural analysis.</p>
                 <ul>
@@ -108,10 +124,12 @@
     </main>
 
     <footer class="site-footer">
+        <p class="footer-tagline">Systems Architecture. Operational Governance.</p>
         <nav class="footer-nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a>
+            <a href="case-studies.html">Case Studies</a>
             <a href="about.html">About</a>
             <a href="leadership.html">Founders &amp; Leadership</a>
             <a href="references.html">References</a>

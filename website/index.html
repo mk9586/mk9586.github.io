@@ -10,6 +10,9 @@
     <meta property="og:description" content="GAKK Consulting helps FQHCs reduce denials, improve documentation, and stabilize revenue cycle operations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gakkconsulting.com/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
@@ -24,13 +27,20 @@
                 <ul class="site-nav">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li class="has-dropdown">
-                        <a href="services.html">Services</a>
+                        <a href="services.html">Services <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li class="dropdown-label">Doctrine</li>
+                            <li><a href="doctrine-documentation-governance.html">Documentation Governance</a></li>
+                            <li><a href="doctrine-denial-pattern-analysis.html">Denial Pattern Analysis</a></li>
+                            <li><a href="doctrine-billing-governance.html">Billing Governance</a></li>
+                            <li><a href="doctrine-intake-eligibility.html">Intake &amp; Eligibility</a></li>
+                            <li><a href="doctrine-audit-substrate.html">Audit Substrate</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
-                        <a href="about.html">About</a>
+                        <a href="about.html">About <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="leadership.html">Founders &amp; Leadership</a></li>
                             <li><a href="alice.html">Alice &mdash; Founder Profile</a></li>
@@ -47,37 +57,44 @@
     </header>
 
     <section class="hero">
-        <h1>We help FQHCs reduce denials, improve documentation, and operate with confidence.</h1>
-        <p>Federally Qualified Health Centers and community health organizations face payer complexity, documentation drift, intake instability, and billing failures that compound into revenue loss and compliance exposure. GAKK Consulting builds audit, documentation, intake, and billing substrates — deterministic operational structures that address root causes rather than symptoms. The result is fewer denials, cleaner records, better-performing claims, and governance that holds.</p>
-        <a href="contact.html" class="btn">Talk with GAKK Consulting</a>
+        <div class="container">
+            <div class="hero-inner">
+                <span class="section-label">FQHC Systems Architecture</span>
+                <h1>We help FQHCs reduce denials, improve documentation, and operate with confidence.</h1>
+                <p>Federally Qualified Health Centers and community health organizations face payer complexity, documentation drift, intake instability, and billing failures that compound into revenue loss and compliance exposure. GAKK Consulting builds audit, documentation, intake, and billing substrates — deterministic operational structures that address root causes rather than symptoms. The result is fewer denials, cleaner records, better-performing claims, and governance that holds.</p>
+                <a href="contact.html" class="btn">Talk with GAKK Consulting</a>
+            </div>
+        </div>
     </section>
 
     <main class="container">
         <div class="value-grid">
-            <div class="value-card">
-                <h3>Denial Reduction</h3>
+            <div class="value-card animate-in">
+                <h3><span class="card-num">01 —</span> Denial Reduction</h3>
                 <p>We build audit substrates that surface documentation gaps before claims are submitted, not after they are rejected.</p>
             </div>
-            <div class="value-card">
-                <h3>Documentation Governance</h3>
-                <p>We establish coding and documentation frameworks aligned to FQHC payer requirements, UDS standards, and clinical workflow reality.</p>
+            <div class="value-card animate-in">
+                <h3><span class="card-num">02 —</span> Documentation Governance</h3>
+                <p>We establish coding and documentation frameworks aligned to FQHC payer requirements and clinical workflow reality.</p>
             </div>
-            <div class="value-card">
-                <h3>Billing &amp; Revenue Cycle Support</h3>
+            <div class="value-card animate-in">
+                <h3><span class="card-num">03 —</span> Billing &amp; Revenue Cycle Support</h3>
                 <p>We structure billing workflows and governance procedures aligned to FQHC encounter rate requirements, managed care contracts, and payer-specific rules.</p>
             </div>
-            <div class="value-card">
-                <h3>Operational Stability</h3>
+            <div class="value-card animate-in">
+                <h3><span class="card-num">04 —</span> Operational Stability</h3>
                 <p>We sequence and structure intake, eligibility, and EHR workflows so that operational drift is caught and corrected systematically.</p>
             </div>
         </div>
     </main>
 
     <footer class="site-footer">
+        <p class="footer-tagline">Systems Architecture. Operational Governance.</p>
         <nav class="footer-nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a>
+            <a href="case-studies.html">Case Studies</a>
             <a href="about.html">About</a>
             <a href="leadership.html">Founders &amp; Leadership</a>
             <a href="references.html">References</a>

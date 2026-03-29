@@ -10,6 +10,9 @@
     <meta property="og:description" content="Alice is the founder of GAKK Consulting, with direct operational experience in FQHC billing, clinical documentation, denial management, and revenue cycle governance.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gakkconsulting.com/alice.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
@@ -24,13 +27,20 @@
                 <ul class="site-nav">
                     <li><a href="index.html">Home</a></li>
                     <li class="has-dropdown">
-                        <a href="services.html">Services</a>
+                        <a href="services.html">Services <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li class="dropdown-label">Doctrine</li>
+                            <li><a href="doctrine-documentation-governance.html">Documentation Governance</a></li>
+                            <li><a href="doctrine-denial-pattern-analysis.html">Denial Pattern Analysis</a></li>
+                            <li><a href="doctrine-billing-governance.html">Billing Governance</a></li>
+                            <li><a href="doctrine-intake-eligibility.html">Intake &amp; Eligibility</a></li>
+                            <li><a href="doctrine-audit-substrate.html">Audit Substrate</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
-                        <a href="about.html" class="active">About</a>
+                        <a href="about.html" class="active">About <span class="dropdown-arrow">&#9662;</span></a>
                         <ul class="dropdown">
                             <li><a href="leadership.html">Founders &amp; Leadership</a></li>
                             <li><a href="alice.html">Alice &mdash; Founder Profile</a></li>
@@ -46,53 +56,61 @@
         </div>
     </header>
 
-    <main class="container">
-        <div class="about-section">
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label">Founder Profile</span>
             <h1>Alice — Founder &amp; Clinical/Billing SME</h1>
             <p class="profile-subhead">Operational background. Clinical depth. Revenue cycle from the inside.</p>
+        </div>
+    </section>
 
-            <div class="about-block">
+    <main class="container">
+        <div class="about-section">
+
+            <div class="about-block animate-in">
                 <p>Alice founded GAKK Consulting from direct, sustained operational experience inside FQHCs and community health organizations. She has managed billing departments, rebuilt denial workflows, developed documentation governance programs, coached providers on clinical documentation and coding, and redesigned intake processes in organizations where those systems had failed. Her background is operational, not theoretical.</p>
                 <p>Her work crosses the clinical-to-billing boundary that most revenue cycle consultants treat as a fixed division. She understands what happens when a provider documents an encounter, what billing receives, how payers adjudicate the claim, where denials originate, and what clinical behavior change is actually required to correct the upstream cause. She operates in all of those spaces.</p>
             </div>
 
-            <div class="about-block">
+            <div class="about-block animate-in">
                 <h2>Clinical Documentation</h2>
-                <p>Alice's clinical documentation work focuses on FQHC-specific requirements: encounter-level sufficiency for encounter rate billing, medical necessity support for managed care, level-of-service alignment, and documentation patterns that hold across provider types — physicians, NPs, PAs, behavioral health, dental, and enabling services. She does not apply a generic documentation standard and assume it fits. She works from the payer requirements, the UDS standards, and the clinical reality of the specific organization.</p>
+                <p>Alice's clinical documentation work focuses on FQHC-specific requirements: encounter-level sufficiency for encounter rate billing, medical necessity support for managed care, level-of-service alignment, and documentation patterns that hold across provider types — physicians, NPs, PAs, behavioral health, dental, and enabling services. She does not apply a generic documentation standard and assume it fits. She works from the payer requirements, the clinical quality standards, and the clinical reality of the specific organization.</p>
                 <p>Her documentation governance work is not training-based. Training addresses knowledge; governance addresses the conditions that allow deficient documentation to persist without correction. She builds the latter.</p>
             </div>
 
-            <div class="about-block">
+            <div class="about-block animate-in">
                 <h2>Billing &amp; Revenue Cycle</h2>
                 <p>Alice's billing background covers the full revenue cycle in FQHC environments: claim preparation, encounter rate submission, payer-specific submission rules, managed care contract alignment, denial classification, appeals, payment posting, and accounts receivable management. She has worked directly in billing operations and has rebuilt billing governance systems in organizations where those systems had degraded to a point of producing systematic revenue loss.</p>
                 <p>Her approach to billing governance is structural. She is not a billing vendor and does not process claims. She designs and implements the frameworks that billing departments use to operate consistently — and she identifies the upstream conditions in documentation and intake that are generating the downstream billing failures they are absorbing.</p>
             </div>
 
-            <div class="about-block">
+            <div class="about-block animate-in">
                 <h2>Denial Management</h2>
                 <p>Alice's denial management work is root cause-oriented. She does not treat denial management as an appeals function. She treats it as diagnostic data. Denial patterns, properly classified and tracked by payer, provider, service type, and denial reason code, reveal structural failures that cannot be identified any other way.</p>
                 <p>She builds denial analysis systems that surface root causes, distinguish between correctable documentation failures and systemic intake or eligibility problems, and feed corrective action back to the right part of the organization — clinical teams, front desk, billing, or leadership — in a form that produces action rather than reports.</p>
             </div>
 
-            <div class="about-block">
+            <div class="about-block animate-in">
                 <h2>Provider Documentation Coaching</h2>
                 <p>Alice provides direct provider documentation coaching grounded in clinical and operational reality, not generic compliance frameworks. She does not deliver one-size-fits-all documentation training. She works from actual encounter data, actual denial patterns, and actual provider-level variance to identify specific, correctable documentation behaviors — and then addresses those behaviors directly with the providers involved.</p>
                 <p>Her coaching is operational: the goal is not awareness, it is documentation behavior change that holds in practice and holds under the conditions of a busy clinical day.</p>
             </div>
 
-            <div class="about-block">
+            <div class="about-block animate-in">
                 <h2>FQHC Operational Depth</h2>
-                <p>Alice's FQHC-specific experience covers the full set of operational conditions that differentiate community health from other healthcare environments: encounter rate billing structures, sliding fee schedule administration, UDS reporting, HRSA compliance requirements, managed care contract complexity, enabling services documentation, and the governance challenges of multi-site, multi-provider organizations operating under resource constraints.</p>
+                <p>Alice's FQHC-specific experience covers the full set of operational conditions that differentiate community health from other healthcare environments: encounter rate billing structures, sliding fee schedule administration, federal compliance reporting, HRSA compliance requirements, managed care contract complexity, enabling services documentation, and the governance challenges of multi-site, multi-provider organizations operating under resource constraints.</p>
                 <p>This is the environment she works in — not as an approximation from adjacent experience, but as the direct environment of her operational history.</p>
             </div>
         </div>
     </main>
 
     <footer class="site-footer">
+        <p class="footer-tagline">Systems Architecture. Operational Governance.</p>
         <nav class="footer-nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="billing-revenue-cycle.html">Billing &amp; Revenue Cycle</a>
+            <a href="case-studies.html">Case Studies</a>
             <a href="about.html">About</a>
             <a href="leadership.html">Founders &amp; Leadership</a>
             <a href="references.html">References</a>
