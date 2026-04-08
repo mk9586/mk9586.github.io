@@ -183,7 +183,7 @@ a:hover {
 }
 
 .site-logo {
-    height: 115px;
+    height: 121px;
     display: block;
     filter: brightness(0) invert(1);
     transition: opacity var(--duration-fast) var(--ease-out);
@@ -888,7 +888,7 @@ a:hover {
     }
 
     .site-logo {
-        height: 96px;
+        height: 101px;
     }
 
     .nav-toggle {
