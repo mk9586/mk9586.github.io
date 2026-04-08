@@ -9,7 +9,14 @@
       "Bash(git commit:*)",
       "Bash(git ls-tree:*)",
       "Bash(git remote:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(mv \"website/SITE-TEXT-REVIEW.md\" .)",
+      "Bash(mv \"website/website notes.txt\" .)",
+      "Bash(rmdir website:*)",
+      "Read(//c/GAKK/**)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git push:*)"
     ]
   }
 }
