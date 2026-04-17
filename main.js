@@ -33,7 +33,9 @@ document.querySelectorAll('.has-dropdown').forEach(item => {
     item.querySelector(':scope > a').addEventListener('click', e => {
         if (window.innerWidth > 768) {
             e.preventDefault();
-            item.classList.toggle('open');
+            const willOpen = !item.classList.contains('open');
+            document.querySelectorAll('.has-dropdown.open').forEach(el => el.classList.remove('open'));
+            if (willOpen) item.classList.add('open');
         }
     });
 });

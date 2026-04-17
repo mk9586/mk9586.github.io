@@ -255,13 +255,11 @@ a:hover {
     transition: transform var(--duration-fast) var(--ease-out);
 }
 
-.has-dropdown:hover > a .dropdown-arrow,
 .has-dropdown.open > a .dropdown-arrow {
     transform: rotate(180deg);
 }
 
 .dropdown {
-    display: none;
     position: absolute;
     top: calc(100% + 12px);
     left: -12px;
@@ -272,11 +270,25 @@ a:hover {
     margin: 0;
     padding: 8px 0;
     z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
 }
 
-.has-dropdown:hover .dropdown,
 .has-dropdown.open .dropdown {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dropdown {
+        transition: none;
+        transform: none;
+    }
 }
 
 .dropdown li a {
@@ -944,6 +956,11 @@ a:hover {
         min-width: 0;
         padding: 0;
         background: var(--color-ink-90);
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        pointer-events: auto;
+        transition: none;
     }
 
     .dropdown li a {
