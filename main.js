@@ -117,3 +117,34 @@ function clearError(field) {
     if (err) err.remove();
     field.removeAttribute('aria-invalid');
 }
+
+// --- Update Banner (TEMPORARY: auto-disappears after 2026-04-24) ---
+
+(function () {
+    const EXPIRES = Date.parse('2026-04-24T23:59:59');
+    const DISMISS_KEY = 'gakk-update-banner-2026-04-17';
+
+    if (Date.now() >= EXPIRES) return;
+    try {
+        if (localStorage.getItem(DISMISS_KEY) === '1') return;
+    } catch (e) { /* private mode — continue and show banner */ }
+    if (/references\.html$/i.test(location.pathname)) return;
+
+    const banner = document.createElement('div');
+    banner.className = 'update-banner';
+    banner.setAttribute('role', 'status');
+    banner.innerHTML =
+        '<div class="update-banner-inner">' +
+            '<p class="update-banner-text">' +
+                '<a href="references.html">New reference letters from Rural Health Group and Metro Community Health Center &rarr;</a>' +
+            '</p>' +
+            '<button class="update-banner-close" type="button" aria-label="Dismiss">&times;</button>' +
+        '</div>';
+
+    document.body.insertBefore(banner, document.body.firstChild);
+
+    banner.querySelector('.update-banner-close').addEventListener('click', () => {
+        banner.remove();
+        try { localStorage.setItem(DISMISS_KEY, '1'); } catch (e) { /* ignore */ }
+    });
+})();
